@@ -8,12 +8,15 @@ import { Component } from '@angular/core';
 export class DosPuntosComponent {
 
   
-  num1="";
-  num2="";
-  resultado:number=0;
+  x1!:number;
+  x2!:number;
+  y1!:number;
+  y2!:number;
+  resultado!:string;
 
 
-  sumar(){
-    this.resultado=parseInt(this.num1)+parseInt(this.num2)
+  calcular() : void{
+    let res = Math.sqrt(Math.pow(this.x2-this.x1, 2) + Math.pow(this.y2-this.y1, 2))
+    this.resultado = ('La distancia entre ambos puntos es ') + res.toFixed(2)
   }
 }

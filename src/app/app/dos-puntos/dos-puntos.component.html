@@ -1,26 +1,27 @@
-<div class="row">
-    <div clas="col-6">  
-        <div class="mb-3">
-            <label for="" class="form-label">Numero1</label>
-            <input type="text" [(ngModel)]="num1" name="x1" placeholder="X1" class="form-control">
-        </div>
-        <div class="mb3">
-            <label for="" class="form-label">Numero1</label>
-            <input type="text" [(ngModel)]="num2" name="x2" placeholder="X2" class="form-control">
-        </div>
-        <div clas="col-6">  
-            <div class="mb-3">
-                <label for="" class="form-label">Numero1</label>
-                <input type="text" [(ngModel)]="num1" name="y1" placeholder="Y1" class="form-control">
-            </div>
-            <div class="mb3">
-                <label for="" class="form-label">Numero1</label>
-                <input type="text" [(ngModel)]="num2" name="y2" placeholder="Y2" class="form-control">
-            </div>
-        <div class="mb3"></div>
-        <button class="btn btn-primary" (click)="sumar()">Calcular</button>
-    </div>
-    <div class="col6">
-        <h2>La suma es: {{resultado}}</h2>
-    </div>
-</div>
+<div class="card">
+    <div class="col">
+        <mat-form-field>
+            <mat-label for="" class="form-label"> x1 </mat-label>
+            <input matInput placeholder="X1" type="number" [(ngModel)]="x1">
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label for="" class="form-label"> x2 </mat-label>
+            <input matInput placeholder="y1" type="number" [(ngModel)]="y1">
+        </mat-form-field>
+
+       
+        <mat-form-field>
+            <mat-label for="" class="form-label"> y1 </mat-label>
+            <input matInput placeholder="X2" type="number" [(ngModel)]="x2">
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label for="" class="form-label"> y2 </mat-label>
+            <input matInput placeholder="y2" type="number" [(ngModel)]="y2">
+        </mat-form-field>
+
+        <button mat-raised-button color="primary" (click)="calcular()">Calcular</button>
+      <h2> {{resultado}} </h2>
+      </div>
+  </div>
