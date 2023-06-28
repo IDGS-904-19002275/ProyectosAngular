@@ -17,6 +17,6 @@ export class DosPuntosComponent {
 
   calcular() : void{
     let res = Math.sqrt(Math.pow(this.x2-this.x1, 2) + Math.pow(this.y2-this.y1, 2))
-    this.resultado = ('La distancia entre ambos puntos es ') + res.toFixed(2)
+    this.resultado = ('La distancia es ') + res.toFixed(2)
   }
 }
